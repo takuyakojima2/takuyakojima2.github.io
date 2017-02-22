@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <title>自己紹介ページ</title>
     <!-- CSSの読み込み-->
     <link rel="stylesheet" href="css/index.css">
     <!-- BootstrapのCSS読み込み -->
@@ -15,7 +15,77 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <!--<p>takuya-kojima2</p>-->
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="site-menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"></a></li>
+              <li><a href="#">HOME</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                  Application
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">メッセージボード</a></li>
+                  <li><a href="#">Twitterクローン</a></li>
+                  <li><a href="#">モノリスト</a></li>
+                  <li><a href="#">オリジナルサービス</a></li>
+                </ul>
+              </li>
+              <li><a href="https://github.com/takuyakojima2">GitHub</a></li>
+              <li><a href="#">トピックス</a></li>
+            </ul>
+          </div> 
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <section>
+        <div id="logo">
+          <p class="nowlap"><img src="IMG_7066.jpg" alt=""></P>
+        </div>
+        <div class="panel panel-info">
+          <h3>自己紹介</h3>
+        </div>
+        <p>こじま たくや</p>
+        <p>神奈川県出身。</p>
+        <p>オンラインブートキャンプを通して、システムについての知識や技術力を習得したいと考えております。</p>
+        <p>最近のマイブームはスマホゲームです(^^)</p>
+        <div class="panel panel-info">
+          <h3>Application</h3>
+        </div>
+        <p>作成したアプリケーションの紹介です。</p>
+        <div id="item-list">
+          <ul class="row">
+            <li class="col-sm-6"><button type="button" class="btn btn-success btn-lg btn-block" >メッセージボード</button></li>
+            <li class="col-sm-6"><button type="button" class="btn btn-info btn-lg btn-block" >Twitterクローン</button></li>
+            <li class="col-sm-6"><button type="button" class="btn btn-danger btn-lg btn-block" >モノリスト</button></li>
+            <li class="col-sm-6"><button type="button" class="btn btn-warning btn-lg btn-block" >オリジナルサービス</button></li>
+          </ul>
+        </div>
+        <p>興味を持っていただけた方は、<a href="https://github.com/takuyakojima2" target="_blank">こちら</a>からGitHubをご参照ください。</p>
+        <div class="panel panel-info">
+          <h3>トピックス</h3>
+        </div>
+        
+          <p>●<span class="red">NEW!</span>　2016.02.22　自己紹介サイトを新規作成いたしました</p>
+          <br>
+          <br>
+          
+      </section>
+      <footer>
+        <p>&copy; 2017 Takuya Kojima.</p>
+      </footer>
+    </div>
   </body>
 </html>
